@@ -12,15 +12,16 @@ export const App = () => {
   const handleIncrement = event => {
     const counter = prevState => prevState + 1;
     switch (event) {
-      case 'good':
+      case 'Good':
         setGood(counter);
         break;
-      case 'neutral':
+      case 'Neutral':
         setNeutral(counter);
         break;
-      case 'bad':
+      case 'Bad':
         setBad(counter);
         break;
+      default:
     }
   };
 
